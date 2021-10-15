@@ -1,0 +1,1441 @@
+*{
+    margin: 0;
+}
+@media(max-width:480px){
+    header{
+        background-color: #1E90FF;
+        height: 10vh;
+        top: 0;
+        position: relative;
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    header nav ul li{
+        display: flex;
+        justify-items: center;
+        margin: 1.5em;
+        margin-top: 1.5em;
+        opacity: 1;
+    }
+    header nav ul li:hover{
+        opacity: 0.9;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: white
+    }
+    .container{
+        max-height: 90%;
+        max-width: 100%;
+    }
+    .cadCnpj{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .cadCnpj h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCnpj p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCnpj fieldset{
+        width: 90%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCnpj legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pj{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .dados-pj label{
+        font-size: 1em;
+    }
+    .dados-pj input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 75vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pj input:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pj select{
+        width: 77.5vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pj select:hover{
+        cursor: pointer;
+    }
+    .dados-pj select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pj-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pj{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 15vh;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pj:hover{
+        opacity: 0.9;
+    }
+    .cadCpf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .cadCpf h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCpf p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCpf fieldset{
+        width: 90%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCpf legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pf{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .dados-pf label{
+        font-size: 1em;
+    }
+    .dados-pf input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 75vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pf input:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pf select{
+        width: 77.5vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pf select:hover{
+        cursor: pointer;
+    }
+    .dados-pf select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pf select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .tipoCadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 90%;
+        margin: 33% auto;
+        text-align: center;
+    }
+    .pf{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        width: 50%;
+        height: 4vh;
+        padding: 1.5em;
+        opacity: 1;
+    }
+    .pf:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pf a{
+        text-decoration: none;
+        color: white;
+    }
+    .pj{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        height: 4vh;
+        width: 50%;
+        padding: 1.5em;
+        opacity: 1;
+    }
+    .pj:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pj a{
+        text-decoration: none;
+        color: white;
+    }
+    .formulario{
+        width: 95%;
+        height: 30%;
+        margin: 40% auto;
+    }
+    .formulario h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+    }
+    .dados{
+        width: 100%;
+        height: 5.3vh;
+        margin-top: 1.5%;
+        padding: 0.5%;
+        padding-top: 2.8%;
+        padding-bottom: 2.7%;
+    }
+    .label{
+        padding-top: 2.5%;
+        background-color: #1E90FF;
+        color: #fff;
+        text-align: center;
+        display: block;
+        float: left;
+        width: 27%;
+        height: 3.5vh;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1%;
+    }
+    .input{
+        width: 60.5%;
+        height: 1.5vh;
+        padding: 2.5%;
+        outline: none;
+        display: block;
+        margin-left: 30.2%;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .input:focus{
+        border: 2px solid #1E90FF;
+    }
+    .login p{
+        margin: 0.3em;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .link:visited{
+        color: #1E90FF;
+    }
+    .btn{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 47%;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1%;
+    }
+    .btn:hover{
+        opacity: 0.9;
+    }
+    .dados-pf-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pf{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 15vh;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pf:hover{
+        opacity: 0.9;
+    }
+    footer{
+        background-color: #1E90FF;
+        height: 5vh;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer p{
+        margin: 0.5em;
+        margin-top: 0.5em;
+        color: white;
+    }
+    .fixo{
+        position: fixed;
+    }
+}
+@media(min-width:481px) and (max-width:768px){
+    header{
+        background-color: #1E90FF;
+        height: 10vh;
+        top: 0;
+        position: relative;
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    header nav ul li{
+        display: flex;
+        justify-items: center;
+        margin: 2em;
+        margin-top: 2em;
+        opacity: 1;
+    }
+    header nav ul li:hover{
+        opacity: 0.9;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: white
+    }
+    .container{
+        max-height: 90%;
+        max-width: 100%;
+    }
+    .cadCnpj{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .cadCnpj h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCnpj p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCnpj fieldset{
+        width: 90%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCnpj legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pj{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .dados-pj label{
+        font-size: 1em;
+    }
+    .dados-pj input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 75vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pj input:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pj select{
+        width: 77.5vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pj select:hover{
+        cursor: pointer;
+    }
+    .dados-pj select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pj select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pj-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pj{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 15vh;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pj:hover{
+        opacity: 0.9;
+    }
+    .cadCpf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .cadCpf h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCpf p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCpf fieldset{
+        width: 90%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCpf legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pf{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .dados-pf label{
+        font-size: 1em;
+    }
+    .dados-pf input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 75vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pf input:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pf select{
+        width: 77.5vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pf select:hover{
+        cursor: pointer;
+    }
+    .dados-pf select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pf select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pf-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pf{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 15vh;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pf:hover{
+        opacity: 0.9;
+    }
+    .link:visited{
+        color: #1E90FF;
+    }
+    .tipoCadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 90%;
+        margin: 35% auto;
+        text-align: center;
+    }
+    .pf{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        width: 50%;
+        height: 4vh;
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 1.2em;
+    }
+    .pf:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pf a{
+        text-decoration: none;
+        color: white;
+    }
+    .pj{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        height: 4vh;
+        width: 50%;
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 1.2em;
+    }
+    .pj:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pj a{
+        text-decoration: none;
+        color: white;
+    }
+    .formulario{
+        width: 65%;
+        height: 30%;
+        margin: 33% auto;
+    }
+    .formulario h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+    }
+    .dados{
+        width: 100%;
+        height: 4vh;
+        padding-top: 2.5%;
+        padding-bottom: 2%;
+    }
+    .label{
+        padding-top: 2.5%;
+        background-color: #1E90FF;
+        color: #fff;
+        text-align: center;
+        display: block;
+        float: left;
+        width: 27%;
+        height: 3vh;
+        font-size: 0.9em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1%;
+    }
+    .input{
+        width: 60.5%;
+        height: 1.7vh;
+        padding: 2%;
+        outline: none;
+        display: block;
+        margin-left: 30%;
+        font-size: 0.9em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .input:focus{
+        border: 2px solid #1E90FF;
+    }
+    .login p{
+        margin: 0.3em;
+        font-size: 0.9em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 46%;
+        height: 4.3vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.9em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1%;
+    }
+    .btn:hover{
+        opacity: 0.9;
+    }
+    footer{
+        background-color: #1E90FF;
+        height: 5vh;
+        bottom: 0;
+        position: relative;
+        width: 100%;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer p{
+        margin: 0.5em;
+        margin-top: 0.9em;
+        color: white;
+    }
+}
+@media(min-width:769px) and (max-width:1279px){
+    header{
+        background-color: #1E90FF;
+        height: 10vh;
+        top: 0;
+        position: relative;
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.5em;
+    }
+    header nav ul li{
+        display: flex;
+        justify-items: center;
+        margin: 2em;
+        margin-top: 2em;
+        opacity: 1;
+    }
+    header nav ul li:hover{
+        opacity: 0.9;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: white
+    }
+    .container{
+        max-height: 90%;
+        max-width: 100%;
+    }
+    .cadCnpj{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        height: 100%;
+        margin: 32% auto;
+    }
+    .cadCnpj h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCnpj p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCnpj fieldset{
+        width: 70%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCnpj legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pj{
+        display: block;
+        float: left;
+        margin-inline-end: 0.5em;
+        margin-block-end: 0.5em;
+        padding: 0.1em;
+    }
+    .dados-pj label{
+        font-size: 1em;
+    }
+    .dados-pj input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 18vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pj input:focus{
+        border: 1px solid #1E90FF;
+    }
+    #idNumCnpj{
+        width: 11vw;
+    }
+    .dados-pj select{
+        width: 18vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pj select:hover{
+        cursor: pointer;
+    }
+    .dados-pj select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pj select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pj-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pj{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 10vh;
+        height: 3vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pj:hover{
+        opacity: 0.9;
+    }
+    .link:visited{
+        color: #1E90FF;
+    }
+    .cadCpf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 65%;
+        height: 100%;
+        margin: 32% auto;
+    }
+    .cadCpf h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCpf p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCpf fieldset{
+        width: 70%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCpf legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pf{
+        display: block;
+        float: left;
+        margin-inline-end: 0.5em;
+        margin-block-end: 0.5em;
+        padding: 0.1em;
+    }
+    .dados-pf label{
+        font-size: 1em;
+    }
+    .dados-pf input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 18vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pf input:focus{
+        border: 1px solid #1E90FF;
+    }
+    #idRazaoSocial{
+        width: 19.3vw;
+    }
+    #idNomeFantasia{
+        width: 18vw;
+    }
+    #idNumCnpj{
+        width: 19vw;
+    }
+    #idNumCpf{
+        width: 11vw;
+    }
+    #idIdade{
+        width: 10.3vw;
+    }
+    #idIdadeEmpresa{
+        width: 10.3vw;
+    }
+    #idSexo{
+        width: 11.2vw;
+    }
+    #idTxtEmail{
+        width: 24vw;
+    }
+    #idNumTelefone{
+        width: 17vw;
+    }
+    #idRua{
+        width: 19.5vw;
+    }
+    #idCep{
+        width: 20vw;
+    }
+    #idNumero{
+        width: 17.5vw;
+    }
+    #idComp{
+        width: 19vw;
+    }
+    #idBairro{
+        width: 18.5vw;
+    }
+    #idCidade{
+        width: 23.5vw;
+    }
+    #idSelEstados{
+        width: 24.5vw;
+    }
+    #idSelPaises{
+        width: 20vw;
+    }
+    .dados-pf select{
+        width: 18vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pf select:hover{
+        cursor: pointer;
+    }
+    .dados-pf select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pf-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pf{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 10vh;
+        height: 3vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pf:hover{
+        opacity: 0.9;
+    }
+    .tipoCadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 90%;
+        margin: 35% auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .pf{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        width: 50%;
+        height: 4vh;
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 1.5em;
+    }
+    .pf:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pf a{
+        text-decoration: none;
+        color: white;
+    }
+    .pj{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        height: 4vh;
+        width: 50%;
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 1.5em;
+    }
+    .pj:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pj a{
+        text-decoration: none;
+        color: white;
+    }
+    .formulario{
+        width: 65%;
+        height: 30%;
+        margin: 33% auto;
+    }
+    .formulario h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+    }
+    .dados{
+        width: 100%;
+        height: 5vh;
+        padding-top: 2.5%;
+        padding-bottom: 1.5%;
+    }
+    .label{
+        padding-top: 2.5%;
+        background-color: #1E90FF;
+        color: #fff;
+        text-align: center;
+        display: block;
+        float: left;
+        width: 27%;
+        height: 3.5vh;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1.5%;
+    }
+    .input{
+        width: 60.5%;
+        height: 3vh;
+        padding: 1%;
+        outline: none;
+        display: block;
+        margin-top: 0.5%;
+        margin-left: 31.5%;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .input:focus{
+        border: 2px solid #1E90FF;
+    }
+    .login p{
+        margin: 0.3em;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 46%;
+        height: 4.3vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1.5%;
+    }
+    .btn:hover{
+        opacity: 1.1;
+    }
+    footer{
+        background-color: #1E90FF;
+        height: 5vh;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer p{
+        margin: 1em;
+        margin-top: 1em;
+        color: white;
+    }
+}
+@media(min-width:1280px){
+    header{
+        background-color: #1E90FF;
+        height: 10vh;
+        top: 0;
+        position: relative;
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+    }
+    header nav ul li{
+        display: flex;
+        justify-items: center;
+        margin: 2em;
+        margin-top: 2em;
+        opacity: 1;
+    }
+    header nav ul li:hover{
+        opacity: 1.5;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: white
+    }
+    .container{
+        max-height: 90%;
+        max-width: 100%;
+    }
+    .cadCnpj{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 75%;
+        height: 100%;
+        margin: 1% auto;
+    }
+    .cadCnpj h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCnpj p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCnpj fieldset{
+        width: 65%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCnpj legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pj{
+        display: block;
+        float: left;
+        margin-inline-end: 0.5em;
+        margin-block-end: 0.5em;
+        padding: 0.1em;
+    }
+    .dados-pj label{
+        font-size: 1em;
+    }
+    .dados-pj input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 18vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pj input:focus{
+        border: 1px solid #1E90FF;
+    }
+    #idNumCnpj{
+        width: 10.5vw;
+    }
+    .dados-pj select{
+        width: 18vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pj select:hover{
+        cursor: pointer;
+    }
+    .dados-pj select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pj select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pj-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pj{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 15vh;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+        margin-bottom: 3em;
+    }
+    .btn-pj:hover{
+        opacity: 0.9;
+    }
+    .cadCpf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 65%;
+        height: 100%;
+        margin: 1% auto;
+    }
+    .cadCpf h1{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    .cadCpf p{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    .cadCpf fieldset{
+        width: 65%;
+        margin: 0.5em;
+        border: 1px solid #1E90FF;
+        border-radius: 0.4em;
+    }
+    .cadCpf legend{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .dados-pf{
+        display: block;
+        float: left;
+        margin-inline-end: 0.5em;
+        margin-block-end: 0.5em;
+        padding: 0.1em;
+    }
+    .dados-pf label{
+        font-size: 1em;
+    }
+    .dados-pf input{
+        margin-top: 0.4em;
+        font-size: 0.8em;
+        width: 18vw;
+        outline: none;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+    }
+    .dados-pf input:focus{
+        border: 1px solid #1E90FF;
+    }
+    #idRazaoSocial{
+        width: 19vw;
+    }
+    #idNomeFantasia{
+        width: 18vw;
+    }
+    #idNumCnpj{
+        width: 16vw;
+    }
+    #idIdadeEmpresa{
+        width: 9.5vw;
+    }
+    #idNumCpf{
+        width: 11vw;
+    }
+    #idIdade{
+        width: 10.5vw;
+    }
+    #idSexo{
+        width: 11.2vw;
+    }
+    #idTxtEmail{
+        width: 22.5vw;
+    }
+    #idNumTelefone{
+        width: 14.7vw;
+    }
+    #idRua{
+        width: 19vw;
+    }
+    #idCep{
+        width: 17vw;
+    }
+    #idNumero{
+        width: 15vw;
+    }
+    #idComp{
+        width: 18.5vw;
+    }
+    #idBairro{
+        width: 16vw;
+    }
+    #idCidade{
+        width: 22vw;
+    }
+    #idSelEstados{
+        width: 22.5vw;
+    }
+    #idSelPaises{
+        width: 17.3vw;
+    }
+    .dados-pf select{
+        width: 18vw;
+        outline: none;
+        font-size: 0.8em;
+        border: 1px solid grey;
+        border-radius: 0.4em;
+        color: grey;
+    }
+    .dados-pf select:hover{
+        cursor: pointer;
+    }
+    .dados-pf select:focus{
+        border: 1px solid #1E90FF;
+    }
+    .dados-pf select option{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .dados-pf-btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-pf{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        border-radius: 0.3em;
+        cursor: pointer;
+        width: 15vh;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 1em;
+    }
+    .btn-pf:hover{
+        opacity: 0.9;
+    }
+    .link:visited{
+        color: #1E90FF;
+    }
+    .tipoCadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 90%;
+        margin: 10% auto;
+        text-align: center;
+    }
+    .pf{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        width: 50%;
+        height: 4vh;
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 1.2em;
+    }
+    .pf:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pf a{
+        text-decoration: none;
+        color: white;
+    }
+    .pj{
+        background-color: #1E90FF;
+        margin-top: 1em;
+        height: 4vh;
+        width: 50%;
+        padding: 1.5em;
+        opacity: 1;
+        font-size: 1.2em;
+    }
+    .pj:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .pj a{
+        text-decoration: none;
+        color: white;
+    }
+    .formulario{
+        width: 28%;
+        height: 30%;
+        margin: 10% auto;
+    }
+    .formulario h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+    }
+    .dados{
+        width: 100%;
+        height: 5vh;
+        padding-top: 0.5%;
+        padding-bottom: 1.5%;
+    }
+    .label{
+        padding-top: 2%;
+        background-color: #1E90FF;
+        color: #fff;
+        text-align: center;
+        display: block;
+        float: left;
+        width: 30%;
+        height: 4vh;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1%;
+    }
+    .input{
+        width: 60.5%;
+        height: 3vh;
+        padding: 1%;
+        outline: none;
+        display: block;
+        margin-top: 0.5%;
+        margin-left: 33%;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .input:focus{
+        border: 2px solid #1E90FF;
+    }
+    .login p{
+        margin: 0.3em;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn{
+        background-color: #1E90FF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 46.7%;
+        height: 5vh;
+        opacity: 1;
+        display: inline-block;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 1%;
+    }
+    .btn:hover{
+        opacity: 1.1;
+    }
+    footer{
+        background-color: #1E90FF;
+        height: 5vh;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        font-size: 1em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer p{
+        margin: 0.5em;
+        margin-top: 0.5em;
+        color: white;
+    }
+}
